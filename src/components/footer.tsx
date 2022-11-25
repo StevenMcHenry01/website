@@ -6,4 +6,6 @@ export const Footer: React.FC = () => {
   return <Wrapper>Hi</Wrapper>;
 };
 
-const Wrapper = styled.footer``;
+const Wrapper = styled.footer`
+  height: 70px;
+`;

@@ -1,34 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 Personal website for Steven McHenry
 
-## Getting Started
+Basic Next website to showcase some frontend abilities and my personality 👻
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- 🤩 Features
+- 👀 Requirements
+- 🤓 Getting Started
+- 🚀 One click deploy
+- 🧰 Built with
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🤩 Features
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- ⚡ Next.js - React Framework for static rendering
+- ✨ Serverless Architecture
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 👀 Requirements
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- None
 
-## Learn More
+## 🤓 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+- Fill out your `.env` file
+  - `Example`: Example description
+- Run `yarn`
+- Run `yarn dev`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Clone and deploy this template in one click to Vercel for free!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcarstenlebek%2Fshopify-non-embedded-app-template&env=SHOPIFY_API_KEY,SHOPIFY_API_SECRET_KEY,SCOPES,MONGO_URI&envDescription=API%20keys%20needed%20for%20this%20Shopify%20App%20Template.&project-name=non-embedded-shopify-app&repo-name=non-embedded-shopify-app)
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## 🧰 Built with
+
+- [Next.js](https://nextjs.org/)

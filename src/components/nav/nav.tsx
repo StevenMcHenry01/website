@@ -1,16 +1,16 @@
 // 3rd party imports
-import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import React, { useState } from "react";
-import { BiPaint } from "react-icons/bi";
-import styled, { useTheme } from "styled-components";
-import logo from "../../../public/images/logo.svg";
-import { ThemeSelector } from "./theme-selector";
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import React, { useState } from 'react';
+import { BiPaint } from 'react-icons/bi';
+import styled, { useTheme } from 'styled-components';
+import logo from '../../../public/images/logo.svg';
+import { ThemeSelector } from './theme-selector';
 
 const variants = {
-  open: { y: 150 },
+  open: { y: 161 },
   closed: { y: 0 },
 };
 
@@ -23,25 +23,24 @@ export const Nav: React.FC = () => {
       <ThemeSelector show={showThemeSelector} setShow={setShowThemeSelector} />
       <Wrapper
         variants={variants}
-        animate={showThemeSelector ? "open" : "closed"}
-        transition={{ bounce: 0.3, duration: 0.3 }}
+        animate={showThemeSelector ? 'open' : 'closed'}
       >
         <Link href="/">
           <Image src={logo} alt="steven mchenry personal logo" width={70} />
         </Link>
         <ul>
-          <Link href="/" className={router.pathname === "/" ? "selected" : ""}>
+          <Link href="/" className={router.pathname === '/' ? 'selected' : ''}>
             <li>home</li>
           </Link>
           <Link
             href="about"
-            className={router.pathname.includes("/about") ? "selected" : ""}
+            className={router.pathname.includes('/about') ? 'selected' : ''}
           >
             <li>about</li>
           </Link>
           <Link
             href="/writing"
-            className={router.pathname.includes("/writing") ? "selected" : ""}
+            className={router.pathname.includes('/writing') ? 'selected' : ''}
           >
             <li>writing</li>
           </Link>
@@ -51,7 +50,7 @@ export const Nav: React.FC = () => {
               setShowThemeSelector((prev) => !prev);
             }}
           >
-            <BiPaint color={theme?.colors?.color || "white"} size={20} />
+            <BiPaint color={theme?.colors?.color || 'white'} size={20} />
           </button>
         </ul>
       </Wrapper>
@@ -64,7 +63,6 @@ const Wrapper = styled(motion.nav)`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: margin 0.4s ease;
   ul {
     display: flex;
     align-items: center;
